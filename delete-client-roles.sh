@@ -18,11 +18,11 @@
 #   - Rollen-Namen mit Leerzeichen oder Sonderzeichen werden URL-encoded.
 # =============================================================================
 
-KEYCLOAK_URL="https://keycloak02.germanywestcentral.cloudapp.azure.com"
-REALM="rs03"
-CLIENT_ID="sampleapp01"
-USERNAME="apiuser01"
-PASSWORD="S0ftlineS0ftline"
+KEYCLOAK_URL="http://<dein-keycloak-server>"
+REALM="dein-realm-name"                      # Realm, in dem der Client liegt
+CLIENT_ID="sampleapp01"                      # Client, dessen Rollen gelöscht werden sollen
+USERNAME="<dein-admin-benutzername>"         # Benutzer mit realm-admin-Rechten
+PASSWORD="<dein-admin-passwort>"             # Passwort des Benutzers
 
 # 1. Access Token abrufen
 echo "1. Rufe Access Token ab..."
