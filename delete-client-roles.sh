@@ -10,11 +10,16 @@
 #
 # Voraussetzungen:
 #   - Ein Benutzer mit "realm-admin"-Berechtigung im Ziel-Realm.
-#   - Der Benutzer muss im gleichen Realm liegen wie der Client.
+#     **Wichtig:**
+#     - Der Benutzer muss **vollständig konfiguriert** sein:
+#       - Vor- und Nachname müssen gesetzt sein.
+#       - E-Mail-Adresse muss vergeben **und verifiziert** sein.
+#       - Sonst lehnt Keycloak die API-Anfragen ab, selbst wenn die Rolle korrekt zugewiesen ist.
+#   - Der Benutzer muss im **gleichen Realm** liegen wie der Client.
 #   - Grant Type "password" für einfache Authentifizierung.
 #
 # Hinweis:
-#   - Das Skript löscht NUR Client-Rollen, keine Realm-Rollen!
+#   - Das Skript löscht **NUR Client-Rollen**, keine Realm-Rollen!
 #   - Rollen-Namen mit Leerzeichen oder Sonderzeichen werden URL-encoded.
 # =============================================================================
 
