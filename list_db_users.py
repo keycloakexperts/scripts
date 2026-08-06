@@ -1,4 +1,3 @@
-  GNU nano 8.7.1                                                                                keycloak_db_users_v3.py *
 #!/usr/bin/env python3
 """
 Listet Nutzer direkt aus der Keycloak-Postgres-DB (Tabelle user_entity).
