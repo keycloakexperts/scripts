@@ -1,0 +1,19 @@
+Notizen für psql:
+
+# Connect 
+psql "postgresql://pguser01:password@pghost:5432/kc01n1"
+
+# DB-Tables anzeigen
+\dt
+
+# Ausgaben schön machen
+\x
+
+# Alle Nutzer eines Realms "myrealm" anzeigen, in der user_entity Tabelle
+SELECT ue.username, ue.email, ue.enabled, ue.federation_link, ue.created_timestamp
+FROM user_entity ue
+JOIN realm r ON r.id = ue.realm_id
+WHERE r.name = 'myrealm'
+ORDER BY ue.username;
+
+
